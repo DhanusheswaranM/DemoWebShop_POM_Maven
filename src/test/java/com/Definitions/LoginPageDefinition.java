@@ -171,10 +171,14 @@ public class LoginPageDefinition {
 	
 	@Then("Verify the order")
 	public void verify_the_order() {
+		
 		Assert.assertTrue(objAddressPageActions.GetOrderConfirmationMessage().contains("Your order has been successfully processed!"));
-		System.out.println("---------------"+objAddressPageActions.GetOrderNumber()+"---------------");
+		System.out.println(objAddressPageActions.GetOrderConfirmationMessage());
 	}
 
-
+	@Then("the User is able to see the order number")
+	public void the_user_is_able_to_see_the_order_number() {
+		System.out.println("---------------"+objAddressPageActions.GetOrderNumber()+"---------------");
+	}
 
 }

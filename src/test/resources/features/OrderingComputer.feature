@@ -22,4 +22,5 @@ And click continue button for Payment Method
 And click continue button for Payment Information
 And click continue button for confirm order
 And Verify the order
+And the User is able to see the order number
 
