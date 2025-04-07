@@ -1,0 +1,6 @@
+com\Runner\runnerTestNG.class
+com\Utilities\HelperClass.class
+com\Actions\LoginPageActions.class
+com\Definitions\Hooks.class
+com\Pages\LoginPage.class
+com\Definitions\LoginPageDefinition.class

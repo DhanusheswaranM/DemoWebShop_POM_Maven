@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.71 s <<< FAILURE! -- in TestSuite
+com.Runner.runnerTestNG.runScenario["Login with invalid credentials", "Login in the DemoWebShop WebSite"](2) -- Time elapsed: 26.86 s <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at com.Actions.LoginPageActions.setEmail(LoginPageActions.java:26)
+	at com.Definitions.LoginPageDefinition.the_user_is_able_to_visible_the_error(LoginPageDefinition.java:55)
+	at ✽.the User is able to visible the error(file:///D:/DemoWebShopPOM/src/test/resources/features/DemoWebShopPOM.feature:17)
+
